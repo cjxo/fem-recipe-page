@@ -1,0 +1,89 @@
+@font-face {
+    font-family: outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: young-serif;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root {
+    font-family: outfit;
+    background-color: hsl(28, 89%, 93%);
+    line-height: 2;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.recipe-content {
+    background-color: white;
+    border-radius: 16px;
+    padding: 32px;
+    width: 664px;
+    margin: auto;
+}
+
+.recipe-intro {
+    margin-bottom: 26px;
+}
+
+.recipe-preparation {
+    background-color: #ffe6f3;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.recipe-preparation > div {
+    font-weight: bold;
+    font-size: 18px;
+    color: purple;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(94, 63, 63);
+}
+
+li {
+    padding-left: 16px;
+    margin-bottom: 4px;
+}
+
+h1, h2 {
+    font-family: young-seriff;
+    margin-bottom: 8px;
+}
+
+h2 {
+    color: brown;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/:has*/
+tr:has(~ tr) {
+    border-bottom: 1px solid lightslategrey;
+}
+
+td {
+    padding: 8px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
